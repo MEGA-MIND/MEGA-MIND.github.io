@@ -1,0 +1,103 @@
+*,html,body
+{
+    margin : 0;
+    padding : 0;
+}
+
+body
+{
+    background-color : #FFF;
+}
+
+
+.head
+{
+    padding-left : 5%;
+    padding-top : 3%;
+    color: transparent;
+    background: linear-gradient(cyan,red,cyan,red,cyan);
+    -webkit-background-clip: text;
+    font-size : 150%;
+}
+
+@media screen  and (max-width: 600px)
+{
+    .head
+    {   text-align : center;
+        padding-left : 0;
+        padding-top : 10%;
+        font-size : 100%;
+    }
+}
+
+
+
+
+.page .login-box
+{
+    padding-top: 20vh;
+}
+
+.page .login-box .box
+{
+    border:5px;
+    border-radius : 10px;
+    width: 50vw;
+    border : 2px solid #55AAEE ;
+    padding:4%;
+    font-family : "Roboto", "Arial" , "Courier", "Courier New";
+}
+
+.page form .form-grp
+{
+    padding:2%;
+}
+
+.page form .form-grp .form-control
+{
+    width: 60%;
+}
+
+
+@media screen and (min-width : 950px)
+{
+    .page .login-box .box
+    {
+        width: 500px;
+    }   
+}
+
+@media screen and (max-width : 760px)
+{
+    .page .login-box .box
+    {
+        width : 80vw;
+    }
+    
+    .page form .form-grp .form-control
+    {
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
