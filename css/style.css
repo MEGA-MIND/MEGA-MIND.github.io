@@ -20,15 +20,6 @@ body
     font-size : 150%;
 }
 
-@media screen  and (max-width: 770px)
-{
-    .head
-    {   text-align : center;
-        padding-left : 0;
-        padding-top : 6%;
-        font-size : 100%;
-    }
-}
 
 @font-face
 {
@@ -146,8 +137,15 @@ font-style:normal
 }
 
 /* for smaller desktops and tabs */
-@media screen and (max-width : 760px)
+@media screen and (max-width : 770px)
 {
+	.head
+	{   text-align : center;
+		padding-left : 0;
+		padding-top : 6%;
+		font-size : 100%;
+	}
+	
     .page .login-box .box
     {
         width : 80vw;
