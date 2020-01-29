@@ -30,12 +30,30 @@ body
     }
 }
 
-
+@font-face
+{
+font-family:'ARTIFAKT LEGEND REGULAR';
+src:url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.eot');
+src:url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.eot') format('eot'),url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.woff') format('woff'),url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.ttf') format('ttf');
+font-weight:normal;
+font-style:normal
+}
 
 
 .page .login-box
 {
     padding-top: 20vh;
+}
+
+.page .login-box .box .login span
+{
+    font-size: 120%;
+}
+
+.page .login-box .box .login
+{
+    text-align:left;
+    padding-bottom:5%;
 }
 
 .page .login-box .box
@@ -45,7 +63,7 @@ body
     width: 50vw;
     border : 2px solid #55AAEE ;
     padding:4%;
-    font-family : "Roboto", "Arial" , "Courier", "Courier New";
+    font-family :"ARTIFAKT LEGEND REGULAR","opensans-light","Arial" , "Courier", "Courier New";
 }
 
 .page form .form-grp
@@ -55,9 +73,44 @@ body
 
 .page form .form-grp .form-control
 {
-    width: 60%;
+    width: 70%;
+    border-color : #0696d7;
+    height: 4%;
+    font-size : 100%;
+    font-family:"ARTIFAKT LEGEND REGULAR","opensans-light";
+    border-radius : 5px;
+    padding-left : 3%;
+    border:1px solid #CCCCCC;
+}   
+
+.page form .submit
+{
+    padding-top:5%;
 }
 
+.page form .submit input
+{
+    padding: 4%;
+    width : 67%;
+    line-height: 4%;
+    height : 4%;
+    border-color: #0696d7;
+    border-radius: 2px;
+    text-align:center;
+    background-color:#0696d7;
+    color:white;
+    font-weight:900;
+	font-family:"ARTIFAKT LEGEND REGULAR","opensans-light","Arial","Courier","Courier New";
+	font-size : 100%;
+	border-style : solid;
+}
+
+.page form .submit input:hover
+{
+	border-color:#2481AF;
+	background-color:#2481af;
+	transition: 0.2s ease-in;
+}
 
 @media screen and (min-width : 950px)
 {
@@ -74,9 +127,21 @@ body
         width : 80vw;
     }
     
+    .page form .form-grp
+    {
+        padding:3%;
+    }
+    
     .page form .form-grp .form-control
     {
-        width: 85%;
+        width: 95%;
+        height: 5%;
+        
+    }
+    
+    .page form .submit input
+    {
+        width:85%;
     }
 }
 
