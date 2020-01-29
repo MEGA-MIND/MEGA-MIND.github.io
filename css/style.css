@@ -20,12 +20,12 @@ body
     font-size : 150%;
 }
 
-@media screen  and (max-width: 600px)
+@media screen  and (max-width: 770px)
 {
     .head
     {   text-align : center;
         padding-left : 0;
-        padding-top : 10%;
+        padding-top : 6%;
         font-size : 100%;
     }
 }
@@ -42,8 +42,9 @@ font-style:normal
 
 .page .login-box
 {
-    padding-top: 20vh;
+    padding-top: 7vh;
 }
+
 
 .page .login-box .box .login span
 {
@@ -112,7 +113,31 @@ font-style:normal
 	transition: 0.2s ease-in;
 }
 
-@media screen and (min-width : 950px)
+
+.page .login-box .box .boxfoot
+{
+	padding-top: 5%;
+}
+
+.page .login-box .box .boxfoot .sign-up a
+{
+	text-decoration : none;
+	color:#0696d7;
+}
+
+.page .login-box .box .boxfoot .sign-up a:hover
+{
+	color:red;
+}
+
+.page .login-box .box .boxfoot .newuser,.page .login-box .box .boxfoot .sign-up
+{
+	display: inline;
+	padding-right:1%;
+}
+
+/* for desktops */
+@media screen and (min-width : 950px)     
 {
     .page .login-box .box
     {
@@ -120,6 +145,7 @@ font-style:normal
     }   
 }
 
+/* for smaller desktops and tabs */
 @media screen and (max-width : 760px)
 {
     .page .login-box .box
@@ -146,6 +172,28 @@ font-style:normal
 }
 
 
+/* for smaller touchscreens */
+
+@media screen and (max-width : 320px)
+{
+	.page form .submit input
+	{
+		font-size : 90%;
+	}
+}
+
+/* for very small screen phones */
+@media screen and (max-width : 250px)
+{
+	.page form .form-grp .form-control
+	{
+		height: 10%;
+	}
+	.page form .submit input
+	{
+		height : 10%;
+	}
+}
 
 
 
