@@ -30,10 +30,10 @@ font-weight:normal;
 font-style:normal
 }
 
-.page
+/*.page
 {
 	position:relative;
-}
+}*/
 .page .login-box
 {
     padding-top: 7vh;
@@ -197,18 +197,22 @@ font-style:normal
 }
 
 
-.footer
+/*.footer
 {
 	position:absolute;
 	background-color: red;
 	width:100%;
 	bottom:-20px;
+}*/
+
+
+@media screen and (max-width : 800px)
+{
+	.page .login-box
+	{
+		height : 150vw;
+	}
 }
-
-
-
-
-
 
 
 
