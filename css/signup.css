@@ -1,0 +1,299 @@
+*,html,body
+{
+	margin : 0;
+	padding : 0;
+}
+
+body
+{
+	background-color : #FFF;
+}
+
+
+.head
+{
+	padding-left : 5%;
+	padding-top : 3%;
+	color: #0696d7;
+	font-size : 150%;
+}
+
+
+@font-face
+{
+	font-family:'ARTIFAKT LEGEND REGULAR';
+	src:url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.eot');
+	src:url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.eot') format('eot'),url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.woff') format('woff'),url('https://cdn.web-platform.io/artifakt/release/v1.2.0/Artifakt Legend Regular.ttf') format('ttf');
+	font-weight:normal;
+	font-style:normal
+}
+
+
+.page .login-box
+{
+	padding-top: 7vh;
+}
+
+
+.page .login-box .box .login span
+{
+	font-size: 120%;
+	font-weight: 600;
+}
+
+.page .login-box .box .login
+{
+	text-align:left;
+	padding-bottom:3%;
+}
+
+.page .login-box .box
+{
+	border:5px;
+	border-radius : 10px;
+	width: 50vw;
+	border : 2px solid #55AAEE ;
+	padding:4%;
+	font-family :"ARTIFAKT LEGEND REGULAR","opensans-light","Arial" , "Courier", "Courier New";
+	
+}
+
+.page form .form-grp
+{
+	padding:2%;
+}
+
+.page form .form-grp .form-control
+{
+	width: 70%;
+	border-color : #0696d7;
+	height: 35px;
+	font-size : 100%;
+	font-family:"ARTIFAKT LEGEND REGULAR","opensans-light";
+	border-radius : 5px;
+	padding-left : 3%;
+	border:1px solid #CCCCCC;
+}   
+
+.page form .submit
+{
+	padding-top:3%;
+}
+
+.page form .submit input
+{
+	padding: 4%;
+	width : 67%;
+	line-height: 5%;
+	height : 5%;
+	border-color: #0696d7;
+	border-radius: 2px;
+	text-align:center;
+	background-color:#0696d7;
+	color:white;
+	font-weight:900;
+	font-family:"ARTIFAKT LEGEND REGULAR","opensans-light","Arial","Courier","Courier New";
+	font-size : 100%;
+	border-style : solid;
+}
+
+.page form .submit input:hover
+{
+	border-color:#2481AF;
+	background-color:#2481af;
+	transition: 0.2s ease-in;
+}
+
+
+.page .login-box .box .boxfoot
+{
+	padding-top: 3%;
+}
+
+.page .login-box .box .boxfoot .sign-up a
+{
+	text-decoration : none;
+	color:teal;
+	font-weight:600;
+	transition: 0.2s ease-in;
+}
+
+.page .login-box .box .boxfoot .sign-up a:hover
+{
+	color:green;
+}
+
+.page .login-box .box .boxfoot .newuser,.page .login-box .box .boxfoot .sign-up
+{
+	display: inline;
+	padding-right:1%;
+}
+
+
+
+.page .footer
+{
+	text-align : center;
+	padding-top: 1%;
+	padding-left:45vw;
+}
+
+.page .footer ul li
+{
+	display:inline-block;
+	padding-right:3%;
+	font-size:95%;
+}
+
+.page .footer ul li a
+{
+	color : #2481af;
+	text-decoration : none;
+}
+.page .footer ul li a:hover
+{
+	color : red;
+}
+
+
+/* for desktops */
+
+@media screen and (orientation : landscape) and (min-width : 1420px)
+{
+	.page .login-box .box
+	{
+		width : 650px;
+		height : 410px;
+	}
+	
+	.page .footer
+	{
+		padding-left:34vw;
+	}
+	
+	.page form .form-grp .form-control
+	{
+		height: 5vh;
+	}
+}
+
+/* for tablets in portrait mode*/
+
+@media screen and (orientation : portrait) and (max-width : 770px)
+{
+	.page .login-box .box
+	{
+		height:49vw;
+		width: 60vw;
+	}
+	
+	.page form .form-grp .form-control
+	{
+		height : 10%;
+	}
+	
+	.page .head
+	{
+		text-align:center;
+	}
+	.page .footer
+	{
+		padding-left:48vw;
+	}
+	.page .footer ul li
+	{
+		padding-right : 4%;
+	}
+	
+}
+
+/* for androids and iphones in portrait */
+
+@media screen and (max-width : 450px)
+{
+	.page .login-box .box
+	{
+		height : 70vw;
+		width : 70vw;
+	}
+	
+	.page form .form-grp .form-control
+	{
+		width : 90%;
+		height:8vw;
+	}
+	.page form .submit input
+	{
+		width : 90%;
+		height : 5vh;
+	}
+}
+
+/* for tablets and phones in landscape mode */
+@media screen and (orientation : landscape) and (max-width : 1100px) and (min-width : 540px)
+{
+	.page form .form-grp .form-control
+	{
+		height : 5vw;
+	}
+	
+	.page .footer
+	{
+		padding-bottom:10%;
+		padding-left: 40vw;
+	}
+}
+
+
+/* for smaller touchscreens and other settings to tune landscape mode and  soft-keyboards-shifts*/
+
+@media screen and (max-height : 420px)
+{
+	.head 
+	{
+		padding-top:1%;
+	}
+	.page .login-box
+	{
+		padding-top:3vh;
+	}
+	.page .login-box .box .boxfoot
+	{
+		padding-top:2%;
+		margin-bottom:-5%;
+	}
+	.page .login-box .box
+	{
+		padding : 3%;
+	}
+	
+	.page .head
+	{
+		text-align:center;
+	}
+	
+}
+
+/* very small screen (non-touchscreen phones) */
+@media screen and (max-width : 300px) and (max-height : 420px)
+{
+	.page .login-box .box
+	{
+		height : 83vw;
+	}
+	
+	.page .head
+	{
+		font-size:90%;
+	}
+	
+	.page .login-box .box .boxfoot
+	{
+		font-size: 90%;
+	}
+}
+
+
+
+
+
