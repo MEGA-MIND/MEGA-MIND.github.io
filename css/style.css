@@ -14,9 +14,7 @@ body
 {
     padding-left : 5%;
     padding-top : 3%;
-    color: transparent;
-    background: linear-gradient(cyan,red,cyan,red,cyan);
-    -webkit-background-clip: text;
+    color: #0696d7;
     font-size : 150%;
 }
 
@@ -40,6 +38,7 @@ font-style:normal
 .page .login-box .box .login span
 {
     font-size: 120%;
+	font-weight: 600;
 }
 
 .page .login-box .box .login
@@ -68,7 +67,7 @@ font-style:normal
 {
     width: 70%;
     border-color : #0696d7;
-    height: 3vw;
+    height: 35px;
     font-size : 100%;
     font-family:"ARTIFAKT LEGEND REGULAR","opensans-light";
     border-radius : 5px;
@@ -142,7 +141,8 @@ font-style:normal
 .page .footer ul li
 {
 	display:inline-block;
-	padding-right:1%;
+	padding-right:3%;
+	font-size:95%;
 }
 
 .page .footer ul li a
@@ -154,11 +154,6 @@ font-style:normal
 {
 	color : red;
 }
-
-/*  */
-/*  */
-
-
 
 
 /* for desktops */
@@ -174,6 +169,11 @@ font-style:normal
 	.page .footer
 	{
 		padding-left:34vw;
+	}
+	
+	.page form .form-grp .form-control
+	{
+		height: 5vh;
 	}
 }
 
@@ -209,7 +209,7 @@ font-style:normal
 
 /* for androids and iphones in portrait */
 
-@media screen and (orientation : portrait) and (max-width : 450px)
+@media screen and (max-width : 450px)
 {
 	.page .login-box .box
 	{
@@ -225,12 +225,11 @@ font-style:normal
 	{
 		width : 90%;
 		height : 5vh;
-		
 	}
 }
 
 /* for tablets and phones in landscape mode */
-@media screen and (orientation : landscape) and (max-width : 1100px)
+@media screen and (orientation : landscape) and (max-width : 1100px) and (min-width : 540px)
 {
 	.page form .form-grp .form-control
 	{
