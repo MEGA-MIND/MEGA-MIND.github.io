@@ -237,6 +237,9 @@ font-style:normal
 	}
 }
 
+
+/* for smaller touchscreens and other settings to tune landscape mode and  soft-keyboards-shifts*/
+
 @media screen and (max-height : 420px)
 {
 	.head 
@@ -256,8 +259,15 @@ font-style:normal
 	{
 		padding : 3%;
 	}
+	
+	.page .head
+	{
+		text-align:center;
+	}
+	
 }
 
+/* very small screen (non-touchscreen phones) */
 @media screen and (max-width : 260px) and (max-height : 300px)
 {
 	.page .login-box .box
